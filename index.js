@@ -192,7 +192,7 @@ module.exports = {
       ignoreUrls: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
-      ignoreRegExprLiterals: true,
+      ignoreRegExpLiterals: true,
     }],
     "max-lines": ["warn", 600],
     "max-nested-callbacks": ["warn", {max: 8}],
