@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-launchbadge",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/launchbadge/eslint-config-launchbadge.git"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "Ryan Leckey <ryan@launchbadge.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/launchbadge/eslint-config-launchbadge/issues"
+  },
+  "homepage": "https://github.com/launchbadge/eslint-config-launchbadge#readme",
+  "dependencies": {
+    "babel-eslint": "^7.2.3"
+  },
+  "peerDependencies": {
+    "eslint": "^4.0.0"
+  }
+}
