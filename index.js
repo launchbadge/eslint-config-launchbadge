@@ -183,7 +183,7 @@ module.exports = {
       allowObjectEnd: true,
       allowArrayStart: true,
       allowArrayEnd: true,
-      ignorePattern: "(^\s*@flow)"
+      ignorePattern: "(@flow)"
     }],
     "max-depth": ["warn", {max: 4}],
     "max-len": ["error", {
