@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 8,
@@ -7,7 +6,6 @@ module.exports = {
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: true,
-      jsx: true,
       experimentalObjectRestSpread: true
     }
   },
@@ -23,7 +21,7 @@ module.exports = {
     "import/ignore": [".css$", ".(png|svg|jpg|gif)$"]
   },
   extends: [
-    // ESLint – Recommended (marked with a checkmark)
+    // Recommended
     // http://eslint.org/docs/rules/
     "eslint:recommended"
   ],
