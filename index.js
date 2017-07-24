@@ -16,6 +16,12 @@ module.exports = {
     commonjs: true,
     es6: true
   },
+  plugins: ["import"],
+  settings: {
+    "import/extensions": [".js"],
+    "import/resolver": { node: {}, webpack: {} },
+    "import/ignore": [".css$", ".(png|svg|jpg|gif)$"]
+  },
   extends: [
     // ESLint – Recommended (marked with a checkmark)
     // http://eslint.org/docs/rules/
@@ -330,7 +336,6 @@ module.exports = {
     "arrow-spacing": ["error", { before: true, after: true }],
     "generator-star-spacing": ["error", { before: true, after: true }],
     "no-confusing-arrow": "error",
-    "no-duplicate-imports": "error",
     "no-useless-computed-key": "error",
     "no-useless-constructor": "error",
     "no-useless-rename": "error",
@@ -347,6 +352,40 @@ module.exports = {
     "prefer-template": "error",
     "rest-spread-spacing": ["error", "never"],
     "template-curly-spacing": ["error", "never"],
-    "yield-star-spacing": ["error", "both"]
+    "yield-star-spacing": ["error", "both"],
+
+    // Import
+    // https://github.com/benmosher/eslint-plugin-import
+
+    "import/default": "error",
+    "import/export": "error",
+    "import/extensions": ["error", "always", { js: "never" }],
+    "import/first": "error",
+    "import/max-dependencies": ["error", { max: 30 }],
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
+    "import/no-amd": "error",
+    "import/no-anonymous-default-export": ["error", { allowObject: true }],
+    "import/no-commonjs": "error",
+    "import/no-deprecated": "warn",
+    "import/no-duplicates": "error",
+    "import/no-dynamic-require": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["**/*.test.js", "**/*.spec.js"] }
+    ],
+    "import/no-mutable-exports": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-default": "error",
+    "import/no-namespace": "warn",
+    "import/no-unassigned-import": "warn",
+    "import/no-unresolved": "error",
+    "import/no-webpack-loader-syntax": "error",
+    "import/order": ["error", { "newlines-between": "never" }],
+    "import/prefer-default-export": "error",
+    "import/unambiguous": "error"
   }
-};
+}
