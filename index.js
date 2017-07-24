@@ -197,7 +197,7 @@ module.exports = {
         SwitchCase: 1
       }
     ],
-    "jsx-quotes": ["error", "prefer-double"],
+    "jsx-quotes": ["error", "prefer-single"],
     "key-spacing": [
       "error",
       {
@@ -290,7 +290,7 @@ module.exports = {
     ],
     "padded-blocks": ["error", "never"],
     "quote-props": ["error", "consistent"],
-    quotes: ["error", "double", { avoidEscape: true }],
+    quotes: ["error", "single", { avoidEscape: true }],
     semi: ["error", "never"],
     "semi-spacing": ["error", { before: false, after: true }],
     "semi-style": ["error", "last"],
