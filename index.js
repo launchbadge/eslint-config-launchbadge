@@ -28,6 +28,7 @@ module.exports = {
     "for-direction": "error",
     "getter-return": "error",
     "no-await-in-loop": "warn",
+    "no-console": "warn",
     "no-extra-parens": [
       "error",
       "all",
