@@ -48,7 +48,7 @@ module.exports = {
     "array-callback-return": "error",
     complexity: ["warn", 15],
     "consistent-return": "error",
-    curly: ["error", "multi", "consistent"],
+    curly: ["error", "multi-line", "consistent"],
     "default-case": "error",
     "dot-location": ["error", "property"],
     "dot-notation": ["error", { allowPattern: "^[a-z]+(_[a-z]+)+$" }],
