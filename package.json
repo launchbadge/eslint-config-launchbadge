@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-launchbadge",
+  "name": "@launchbadge/eslint-config",
   "version": "0.5.0",
   "description": "",
   "main": "index.js",
