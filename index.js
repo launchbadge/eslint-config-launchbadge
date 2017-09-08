@@ -196,7 +196,7 @@ module.exports = {
     ],
     indent: [
       "error",
-      "tab",
+      2,
       {
         SwitchCase: 1
       }
@@ -255,7 +255,7 @@ module.exports = {
     "no-bitwise": "warn",
     "no-lonely-if": "error",
     "no-mixed-operators": "error",
-    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-mixed-spaces-and-tabs": "error",
     "no-multi-assign": "error",
     "no-multiple-empty-lines": ["error", { max: 2, maxEOF: 1, maxBOF: 1 }],
     "no-negated-condition": "error",
