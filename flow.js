@@ -1,11 +1,11 @@
 module.exports = {
-  plugins: ["flowtype"],
+  plugins: ['flowtype'],
   extends: [
     // Recommended
     // https://github.com/gajus/eslint-plugin-flowtype/blob/master/src/configs/recommended.json
-    "plugin:flowtype/recommended"
+    'plugin:flowtype/recommended',
   ],
   rules: {
-    "flowtype/semi": ["error", "never"]
-  }
+    'flowtype/semi': ['error', 'never'],
+  },
 }

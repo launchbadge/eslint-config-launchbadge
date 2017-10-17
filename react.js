@@ -1,14 +1,17 @@
 module.exports = {
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
-  plugins: ["react"],
+  plugins: ['react'],
   extends: [
     // Recommended
     // https://github.com/yannickcr/eslint-plugin-react#recommended
-    "plugin:react/recommended"
+    'plugin:react/recommended',
   ],
-  rules: {}
+  rules: {
+    // Too many false positives
+    'react/prop-types': 'off',
+  },
 }
