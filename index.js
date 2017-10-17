@@ -73,22 +73,6 @@ module.exports = {
     'no-iterator': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': [
-      'warn',
-      {
-        detectObjects: true,
-        ignore: Array(11)
-          .fill()
-          .map((value, index) => index)
-          .concat(
-            Array(10)
-              .fill()
-              .map((value, index) => -(index + 1))
-          ),
-        ignoreArrayIndexes: true,
-        enforceConst: true,
-      },
-    ],
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new': 'error',
