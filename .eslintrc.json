@@ -1,4 +1,4 @@
 {
-  "extends": ["./index.js", "./react.js", "./flow.js"],
+  "extends": ["./index.js"],
   "rules": {}
 }
