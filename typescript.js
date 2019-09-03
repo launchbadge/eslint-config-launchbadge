@@ -13,6 +13,11 @@ module.exports = {
     }
   },
   rules: {
+    // Due to the nature of the interaction between JavaScript and TypeScript we believe
+    // these are important to allow (otherwise weird stuff like 'x || 0' happens which we
+    // find is less correct than simply 'x!')
+    "@typescript-eslint/no-non-null-assertion": "off",
+
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/ban-types": "error",
