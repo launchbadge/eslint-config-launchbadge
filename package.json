@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/launchbadge/eslint-config-launchbadge#readme",
   "dependencies": {
+    "@lwc/eslint-plugin-lwc": "^0.7.0",
     "eslint-import-resolver-typescript": "^1.1.1",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-compat": "^3.3.0",
