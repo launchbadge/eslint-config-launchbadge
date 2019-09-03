@@ -32,6 +32,9 @@ module.exports = {
     "unicorn/filename-case": "off",
     "unicorn/prevent-abbreviations": "off",
 
+    // Unused variables should not be an error
+    "no-unused-vars": "warn",
+
     // TODO: Categorize
     "no-var": "error",
     "prefer-const": "error",
