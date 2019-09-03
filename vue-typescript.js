@@ -1,5 +1,5 @@
 /* eslint-env node */
 module.exports = {
-  extends: ["@vue/typescript"],
+  extends: ["@vue/typescript", "./typescript.js"],
   rules: {}
 };
