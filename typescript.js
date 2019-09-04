@@ -2,8 +2,9 @@
 module.exports = {
   // This is manually applied as we cannot use this due to ordering in combination with Vue
   // extends: ["plugin:@typescript-eslint/recommended"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    parser: "@typescript-eslint/parser",
+    emcaVersion: 6,
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
