@@ -1,12 +1,6 @@
 /* eslint-env node */
 module.exports = {
-  // This is manually applied as we cannot use this due to ordering in combination with Vue
-  // extends: ["plugin:@typescript-eslint/recommended"],
-  parserOptions: {
-    parser: "@typescript-eslint/parser",
-    sourceType: "module",
-  },
-  plugins: ["@typescript-eslint"],
+  extends: ["plugin:@typescript-eslint/base"],
   settings: {
     "import/extensions": [".js", ".ts"],
     "import/resolver": {
