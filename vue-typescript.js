@@ -4,7 +4,11 @@ module.exports = {
   parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
     parser: "@typescript-eslint/parser",
-    sourceType: "module"
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+    warnOnUnsupportedTypeScriptVersion: false,
   },
   rules: {}
 };
