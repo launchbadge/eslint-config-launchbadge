@@ -37,6 +37,7 @@ module.exports = {
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/type-annotation-spacing": "error",
     "no-var": "error",
+    "no-dupe-class-members": "off",
     "prefer-const": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
