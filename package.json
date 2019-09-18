@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/launchbadge/eslint-config-launchbadge#readme",
   "dependencies": {
-    "@lwc/eslint-plugin-lwc": "^0.7.0",
-    "@typescript-eslint/eslint-plugin": "^2.2.0",
-    "@typescript-eslint/parser": "^2.2.0",
+    "@lwc/eslint-plugin-lwc": "^0.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "eslint-import-resolver-typescript": "^1.1.1",
@@ -27,8 +27,8 @@
     "eslint-plugin-compat": "^3.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-unicorn": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-unicorn": "^11.0.0",
     "eslint-plugin-vue": "^5.2.3",
     "prettier": "^1.18.2"
   },
@@ -36,6 +36,6 @@
     "eslint": "^6.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.3.0"
+    "eslint": "^6.4.0"
   }
 }
