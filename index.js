@@ -173,7 +173,7 @@ module.exports = {
         "quotes": [ "error", "double" ],
         "semi": [ "error", "always" ],
         "semi-spacing": [ "error", { before: false, after: true }],
-        "semi-style": [ "error", "first" ],
+        "semi-style": [ "error", "last" ],
         "space-before-blocks": [ "error", "always" ],
         "space-before-function-paren": [ "error", "never" ],
         "space-in-parens": [ "error", "never" ],
