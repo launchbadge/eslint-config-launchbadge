@@ -131,7 +131,7 @@ module.exports = {
         "function-call-argument-newline": [ "error", "consistent" ],
         "function-paren-newline": [ "error", "multiline" ],
         "implicit-arrow-linebreak": [ "error", "beside" ],
-        "indent": [ "error", 4 ],
+        "indent": [ "error", 4, { SwitchCase: 1 }],
         "key-spacing": [
             "error",
             {
@@ -152,7 +152,6 @@ module.exports = {
         "no-mixed-operators": "error",
         "no-multi-assign": "error",
         "no-multiple-empty-lines": [ "error", { max: 1 }],
-        "no-negated-condition": "error",
         "no-nested-ternary": "error",
         "no-new-object": "error",
         "no-plusplus": "error",
