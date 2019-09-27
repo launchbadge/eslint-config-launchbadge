@@ -23,7 +23,6 @@ module.exports = {
         // Possible Errors
 
         "no-await-in-loop": "warn",
-        "no-extra-parens": "error",
         "no-import-assign": "error",
         "no-template-curly-in-string": "error",
 
