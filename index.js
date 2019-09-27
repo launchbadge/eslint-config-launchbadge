@@ -3,7 +3,7 @@ module.exports = {
     extends: [ "eslint:recommended", "plugin:import/errors", "plugin:unicorn/recommended" ],
     settings: { "import/resolver": { webpack: {}}},
     rules: {
-        "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+        "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
 
         // Broken in eslint@6.x
