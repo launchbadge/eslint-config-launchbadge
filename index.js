@@ -33,7 +33,6 @@ module.exports = {
         //
 
         "array-callback-return": "error",
-        "class-methods-use-this": "warn",
         "consistent-return": "error",
         "curly": [ "error", "multi-line", "consistent" ],
         "default-case": "error",
