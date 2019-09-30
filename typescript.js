@@ -13,7 +13,6 @@ module.exports = {
         "camelcase": "off",
         "@typescript-eslint/camelcase": "error",
         "@typescript-eslint/class-name-casing": "error",
-        "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/interface-name-prefix": "error",
         "@typescript-eslint/member-delimiter-style": "error",
         "no-array-constructor": "off",
