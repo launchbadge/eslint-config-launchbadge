@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-    extends: [ "plugin:vue/recommended", "@vue/prettier", "./index.js", "./browser.js" ],
+    extends: [ "plugin:vue/recommended", "./index.js", "./browser.js" ],
     rules: {
         "vue/array-bracket-spacing": "error",
         "vue/arrow-spacing": "error",
