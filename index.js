@@ -82,6 +82,7 @@ module.exports = {
 
         "no-label-var": "error",
         "no-undef-init": "error",
+        "no-undefined": "error",
 
         //
         // Node.js and CommonJS
