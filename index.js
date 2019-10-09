@@ -6,21 +6,10 @@ module.exports = {
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
 
-        // Broken in eslint@6.x
-        // See https://github.com/benmosher/eslint-plugin-import/issues/1341
-        "import/named": "off",
-
-        // This often has false positives for async/await style
-        "require-atomic-updates": "off",
-
         //
-        // Unicorn
-        //
-
-        "unicorn/filename-case": "off",
-        "unicorn/prevent-abbreviations": "off",
-
         // Possible Errors
+        // https://eslint.org/docs/rules/#possible-errors
+        //
 
         "no-await-in-loop": "warn",
         "no-import-assign": "error",
@@ -116,7 +105,7 @@ module.exports = {
 
         "array-bracket-newline": [ "error", { multiline: true }],
         "array-bracket-spacing": [ "error", "always", { objectsInArrays: false, arraysInArrays: false }],
-        "array-element-newline": [ "error", { multiline: true }],
+        "array-element-newline": [ "error", "consistent" ],
         "block-spacing": [ "error", "always" ],
         "brace-style": [ "error", "1tbs", { allowSingleLine: false }],
         "camelcase": [ "error" ],
@@ -143,6 +132,10 @@ module.exports = {
         "keyword-spacing": [ "error", { before: true, after: true }],
         "linebreak-style": [ "error", "unix" ],
         "lines-between-class-members": [ "error", "always", { exceptAfterSingleLine: true }],
+        "max-len": [ "error", {
+            code: 100,
+            comments: 100
+        }],
         "multiline-comment-style": [ "error", "separate-lines" ],
         "new-cap": "error",
         "new-parens": "error",
@@ -205,6 +198,14 @@ module.exports = {
         "rest-spread-spacing": [ "error", "never" ],
         "symbol-description": "error",
         "template-curly-spacing": [ "error", "never" ],
-        "yield-star-spacing": [ "error", { before: true, after: false }]
+        "yield-star-spacing": [ "error", { before: true, after: false }],
+
+        //
+        // Unicorn
+        // https://github.com/sindresorhus/eslint-plugin-unicorn#rules
+        //
+
+        "unicorn/filename-case": "off",
+        "unicorn/prevent-abbreviations": "off",
     }
 };
