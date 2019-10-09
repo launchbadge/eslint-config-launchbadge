@@ -134,7 +134,9 @@ module.exports = {
         "lines-between-class-members": [ "error", "always", { exceptAfterSingleLine: true }],
         "max-len": [ "error", {
             code: 100,
-            comments: 100
+            comments: 100,
+            ignoreStrings: true,
+            ignoreTemplateLiterals: true,
         }],
         "multiline-comment-style": [ "error", "separate-lines" ],
         "new-cap": "error",
