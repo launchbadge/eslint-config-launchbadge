@@ -133,12 +133,14 @@ module.exports = {
         "keyword-spacing": [ "error", { before: true, after: true }],
         "linebreak-style": [ "error", "unix" ],
         "lines-between-class-members": [ "error", "always", { exceptAfterSingleLine: true }],
-        "max-len": [ "error", {
-            code: 100,
-            comments: 100,
-            ignoreStrings: true,
-            ignoreTemplateLiterals: true,
-        }],
+        "max-len": [
+            "error", {
+                code: 100,
+                ignoreStrings: true,
+                ignoreComments: true,
+                ignoreTemplateLiterals: true
+            }
+        ],
         "multiline-comment-style": [ "error", "separate-lines" ],
         "new-cap": "error",
         "new-parens": "error",
@@ -209,6 +211,6 @@ module.exports = {
         //
 
         "unicorn/filename-case": "off",
-        "unicorn/prevent-abbreviations": "off",
+        "unicorn/prevent-abbreviations": "off"
     }
 };

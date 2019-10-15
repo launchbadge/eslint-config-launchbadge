@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/launchbadge/eslint-config-launchbadge.git"
   },
+  "scripts": {
+    "lint": "eslint \"*.js\""
+  },
   "keywords": [
     "eslint-config"
   ],
