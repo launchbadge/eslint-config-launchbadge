@@ -4,7 +4,7 @@ module.exports = {
     settings: { "import/resolver": { webpack: {}}},
     plugins: [ "@lwc/eslint-plugin-lwc" ],
     rules: {
-    // Disable access to document queries
+        // Disable access to document queries
         "@lwc/lwc/no-document-query": "error",
 
         // Lint the browser compatibility of your code
