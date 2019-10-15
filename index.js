@@ -211,6 +211,8 @@ module.exports = {
         //
 
         "unicorn/filename-case": "off",
-        "unicorn/prevent-abbreviations": "off"
+        "unicorn/prevent-abbreviations": "off",
+        "unicorn/custom-error-definition": "error",
+        "unicorn/no-unsafe-regex": "error"
     }
 };
