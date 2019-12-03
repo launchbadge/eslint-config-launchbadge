@@ -28,7 +28,7 @@ module.exports = {
         "default-param-last": "error",
         "dot-location": [ "error", "property" ],
         "dot-notation": [ "error", { allowKeywords: false, allowPattern: "^[a-z]+(_[a-z]+)+$" }],
-        "eqeqeq": [ "error", "smart" ],
+        "eqeqeq": [ "error", "always", { null: "never" }],
         "guard-for-in": "error",
         "no-alert": "error",
         "no-caller": "error",

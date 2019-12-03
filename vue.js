@@ -9,7 +9,7 @@ module.exports = {
         "vue/camelcase": "error",
         "vue/comma-dangle": "error",
         "vue/component-name-in-template-casing": "error",
-        "vue/eqeqeq": [ "error", "smart" ],
+        "vue/eqeqeq": [ "error", "always", { null: "never" }],
         "vue/key-spacing": "error",
         "vue/match-component-file-name": "error",
         "vue/no-boolean-default": "error",
