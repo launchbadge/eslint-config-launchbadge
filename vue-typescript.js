@@ -7,8 +7,13 @@ module.exports = {
         sourceType: "module",
         ecmaFeatures: { jsx: true },
         warnOnUnsupportedTypeScriptVersion: false,
-        project: "./tsconfig.json",
         extraFileExtensions: [ ".vue" ]
     },
+    overrides: [
+        {
+            files: ["*.ts", "*.tsx"],
+            parserOptions: { project: "./tsconfig.json" },
+        }
+    ],
     rules: {}
 };

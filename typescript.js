@@ -3,9 +3,35 @@ module.exports = {
     extends: [
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
-    parserOptions: { project: "./tsconfig.json" },
+    overrides: [
+        {
+            files: ["*.ts", "*.tsx"],
+            parserOptions: { project: "./tsconfig.json" },
+            extends: [
+                "plugin:@typescript-eslint/recommended-requiring-type-checking"
+            ],
+            rules: {
+                // Requires Promise-like values to be handled appropriately
+                "@typescript-eslint/no-floating-promises": "error",
+
+                // Warns when a namespace qualifier is unnecessary
+                "@typescript-eslint/no-unnecessary-qualifier": "error",
+
+                // Warns if an explicitly specified type argument is the default for that type parameter
+                "@typescript-eslint/no-unnecessary-type-arguments": "error",
+
+                // Enforce giving compare argument to Array#sort
+                "@typescript-eslint/require-array-sort-compare": "error",
+
+                // When adding two variables, operands must both be of type number or of type string.
+                "@typescript-eslint/restrict-plus-operands": "error",
+
+                // Boolean expressions are limited to booleans
+                "@typescript-eslint/strict-boolean-expressions": "error",
+            }
+        }
+    ],
     settings: {
         "import/extensions": [ ".js", ".ts" ],
         "import/resolver": { typescript: { alwaysTryTypes: true }}
@@ -53,17 +79,8 @@ module.exports = {
         // Forbids the use of classes as namespaces
         "@typescript-eslint/no-extraneous-class": "error",
 
-        // Requires Promise-like values to be handled appropriately
-        "@typescript-eslint/no-floating-promises": "error",
-
         // Disallows invocation of require()
         "@typescript-eslint/no-require-imports": "error",
-
-        // Warns when a namespace qualifier is unnecessary
-        "@typescript-eslint/no-unnecessary-qualifier": "error",
-
-        // Warns if an explicitly specified type argument is the default for that type parameter
-        "@typescript-eslint/no-unnecessary-type-arguments": "error",
 
         // Disallow unnecessary constructors
         "no-useless-constructor": "off",
@@ -79,18 +96,9 @@ module.exports = {
         "quotes": "off",
         "@typescript-eslint/quotes": [ "error", "double" ],
 
-        // Enforce giving compare argument to Array#sort
-        "@typescript-eslint/require-array-sort-compare": "error",
-
-        // When adding two variables, operands must both be of type number or of type string.
-        "@typescript-eslint/restrict-plus-operands": "error",
-
         // Enforces consistent use of semicolons
         "semi": "off",
         "@typescript-eslint/semi": [ "error", "always" ],
-
-        // Boolean expressions are limited to booleans
-        "@typescript-eslint/strict-boolean-expressions": "error",
 
         // Warns for any two overloads that could be unified into one
         "@typescript-eslint/unified-signatures": "error",
