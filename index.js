@@ -210,6 +210,12 @@ module.exports = {
         // https://github.com/sindresorhus/eslint-plugin-unicorn#rules
         //
 
+        "unicorn/expiring-todo-comments": [
+            "error",
+            {
+                "ignoreDatesOnPullRequests": false
+            }
+        ],
         "unicorn/filename-case": "off",
         "unicorn/prevent-abbreviations": "off",
         "unicorn/custom-error-definition": "error",
