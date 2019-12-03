@@ -1,8 +1,8 @@
 /* eslint-env node */
 module.exports = {
-    extends: [ "eslint:recommended", "plugin:import/errors", "plugin:unicorn/recommended", "plugin:sonarjs/recommended" ],
+    extends: [ "eslint:recommended", "plugin:import/errors", "plugin:unicorn/recommended", "plugin:sonarjs/recommended", "plugin:promise/recommended" ],
     settings: { "import/resolver": { webpack: {}}},
-    plugins: [ "sonarjs" ],
+    plugins: [ "sonarjs", "no-secrets", "promise" ],
     rules: {
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
@@ -216,6 +216,12 @@ module.exports = {
         "unicorn/filename-case": "off",
         "unicorn/prevent-abbreviations": "off",
         "unicorn/custom-error-definition": "error",
-        "unicorn/no-unsafe-regex": "error"
+        "unicorn/no-unsafe-regex": "error",
+
+        //
+        // https://github.com/nickdeis/eslint-plugin-no-secrets
+        //
+
+        "no-secrets/no-secrets": "error"
     }
 };
