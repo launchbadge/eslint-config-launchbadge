@@ -66,7 +66,6 @@ module.exports = {
         "no-useless-concat": "error",
         "no-useless-return": "error",
         "no-void": "error",
-        "no-warning-comments": "warn",
         "prefer-promise-reject-errors": "error",
         "prefer-regex-literals": "error",
         "radix": [ "error", "always" ],
