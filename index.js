@@ -1,7 +1,8 @@
 /* eslint-env node */
 module.exports = {
-    extends: [ "eslint:recommended", "plugin:import/errors", "plugin:unicorn/recommended" ],
+    extends: [ "eslint:recommended", "plugin:import/errors", "plugin:unicorn/recommended", "plugin:sonarjs/recommended" ],
     settings: { "import/resolver": { webpack: {}}},
+    plugins: [ "sonarjs" ],
     rules: {
         "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
