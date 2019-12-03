@@ -2,18 +2,16 @@
 module.exports = {
     extends: [
         "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     overrides: [
         {
-            files: ["*.ts", "*.tsx"],
+            files: [ "*.ts", "*.tsx" ],
             parserOptions: { project: "./tsconfig.json" },
-            extends: [
-                "plugin:@typescript-eslint/recommended-requiring-type-checking"
-            ],
+            extends: [ "plugin:@typescript-eslint/recommended-requiring-type-checking" ],
             rules: {
                 // Requires Promise-like values to be handled appropriately
-                "@typescript-eslint/no-floating-promises": "error",
+                "@typescript-eslint/no-floating-promises": [ "error", { ignoreVoid: true }],
 
                 // Warns when a namespace qualifier is unnecessary
                 "@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -28,7 +26,7 @@ module.exports = {
                 "@typescript-eslint/restrict-plus-operands": "error",
 
                 // Boolean expressions are limited to booleans
-                "@typescript-eslint/strict-boolean-expressions": "error",
+                "@typescript-eslint/strict-boolean-expressions": "error"
             }
         }
     ],
@@ -111,6 +109,6 @@ module.exports = {
         // find is less correct than simply 'x!')
         "@typescript-eslint/no-non-null-assertion": "off",
 
-        "@typescript-eslint/explicit-function-return-type": [ "error", { allowTypedFunctionExpressions: true }],
-    },
+        "@typescript-eslint/explicit-function-return-type": [ "error", { allowTypedFunctionExpressions: true }]
+    }
 };

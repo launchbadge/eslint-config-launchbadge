@@ -211,9 +211,7 @@ module.exports = {
 
         "unicorn/expiring-todo-comments": [
             "error",
-            {
-                "ignoreDatesOnPullRequests": false
-            }
+            { ignoreDatesOnPullRequests: false }
         ],
         "unicorn/filename-case": "off",
         "unicorn/prevent-abbreviations": "off",
