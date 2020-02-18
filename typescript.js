@@ -72,7 +72,7 @@ module.exports = {
 
         // Disallow unnecessary parentheses
         "no-extra-parens": "off",
-        "@typescript-eslint/no-extra-parens": "error",
+        "@typescript-eslint/no-extra-parens": [ "error", "all", { "ignoreJSX": "all" }],
 
         // Forbids the use of classes as namespaces
         "@typescript-eslint/no-extraneous-class": "error",
